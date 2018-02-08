@@ -43,7 +43,7 @@ def model_fn(features, labels, mode, params):
         name="out"
     )
 
-    # PREDICTION
+    # PREDICTION (NO NEED TO BE CHANGED)
     if mode == tf.estimator.ModeKeys.PREDICT:
         return tf.estimator.EstimatorSpec(mode=mode, predictions=out)
 

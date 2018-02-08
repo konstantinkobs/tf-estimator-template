@@ -18,4 +18,4 @@ print("Testing model...")
 model.evaluate(input_fn=test_input_fn)
 
 print("Predicting...")
-pred = model.predict(input_fn=test_input_fn)
+pred = list(model.predict(input_fn=test_input_fn))
